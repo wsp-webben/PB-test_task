@@ -4,17 +4,80 @@
 	<title>Test template</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500i,700,900" rel="stylesheet">
 </head>
 <body>
 	<header class="page-header">
-		
+		<a class="page-header__logo">
+			<img class="page-header__image" src="img/logo.svg" width="104" height="18" alt="Your logo">
+		</a>
+		<nav class="page-header__nav main-nav">
+			<ul class="main-nav__list">
+				<li class="main-nav__item main-nav__item--active">
+					<a class="main-nav__link">
+						Home
+					</a>
+				</li>
+				<li class="main-nav__item main-nav__item--active">
+					<a class="main-nav__link" href="#">
+						Pages
+					</a>
+				</li>
+				<li class="main-nav__item main-nav__item--active">
+					<a class="main-nav__link" href="#">
+						Feature
+					</a>
+				</li>
+				<li class="main-nav__item main-nav__item--active">
+					<a class="main-nav__link" href="#">
+						Services
+					</a>
+				</li>
+				<li class="main-nav__item main-nav__item--active">
+					<a class="main-nav__link" href="#">
+						Blog
+					</a>
+				</li>
+				<li class="main-nav__item main-nav__item--active">
+					<a class="main-nav__link" href="#">
+						Contact
+					</a>
+				</li>
+			</ul>			
+		</nav>
+
+		<section class="page-header__slider slider">			
+			<ul class="slider__list">
+				<li class="slider__item">
+					<p class="slider__slogan">						
+						<b class="slider__slogan-bold">Your Company <br />
+						Slogan</b>
+					</p>	
+				</li>
+				<li class="slider__item slider__item--active">
+					<p class="slider__slogan">
+						Here you can type<br />
+						<b class="slider__slogan-bold">Your Company <br />
+						Slogan</b>
+					</p>	
+				</li>
+				<li class="slider__item">
+					<p class="slider__slogan">
+						Here you can type<br />
+						<b class="slider__slogan-bold">Your Slogan</b>
+					</p>	
+				</li>
+			</ul>
+			<div class="slider__dots-wrapper"> 
+				<!-- Generated with JS -->
+			</div>
+		</section>
 	</header>
-	<main class="page-main">
-		
+	<main class="page-main">		
 	</main>
 	<footer class="page-footer">
-		
+		<img src="img/copyright.svg" width="132" height="18" alt="Copyright 2016">
 	</footer>	
 </body>
 </html>
