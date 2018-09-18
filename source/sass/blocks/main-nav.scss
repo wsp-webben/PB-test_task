@@ -1,0 +1,30 @@
+.main-nav__list {
+	display: flex;	
+}
+
+.main-nav__item {
+	a {
+		display: block;
+		padding: 25px 15px;
+
+		font-size: 16px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: inherit;
+
+		&:hover,
+		&:focus {
+			color: $light-blue;
+			outline: none;
+		}
+	}	
+
+	&--active a {
+		color: rgba($light-blue, 0.8);
+		cursor: pointer;
+
+		&:hover {
+			color: rgba($light-blue, 0.8);
+		};
+	}
+}

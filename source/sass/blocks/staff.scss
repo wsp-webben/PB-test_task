@@ -1,0 +1,33 @@
+.staff__container {
+	width: 75%;
+	padding-top: 100px;
+	padding-bottom: 80px;
+}
+
+.staff__list {	
+	display: flex;
+	justify-content: space-between;	
+}
+
+.staff__item {
+	width: 150px;
+	/*height: 150px;*/
+}
+
+.staff__photo {
+	/*width: 100%;*/
+	/*height: auto;*/
+	position: relative;
+	border-radius: 50%;
+	background-color: #f0f; 
+	overflow: hidden;	
+}
+
+.staff__position {
+	display: none;
+
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
