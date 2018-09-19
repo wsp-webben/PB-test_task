@@ -21,7 +21,7 @@
 
 	&--active a {
 		color: rgba($light-blue, 0.8);
-		cursor: pointer;
+		cursor: default;
 
 		&:hover {
 			color: rgba($light-blue, 0.8);

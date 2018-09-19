@@ -1,0 +1,29 @@
+.stats__container {
+	@include container;
+	
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.stats__table {
+	width: 100%;
+	/*border-spacing: 80px 0;*/
+}
+
+.stats__table-header {
+	
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $light-blue;
+}
+
+.stats__table-data {	
+	font-size: 55px;
+	line-height: 65px;
+	font-weight: 900; /*black;*/
+	text-transform: uppercase;
+	text-align: center;
+	color: $dark-gray;
+}

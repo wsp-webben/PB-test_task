@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Test template</title>	
 	<meta charset="utf-8">
@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__container container">
+		<div class="header__container">
 			<a class="header__logo">
 				<img class="header__image" src="img/logo.svg" width="208" height="36" alt="Your logo">
 			</a>
@@ -50,9 +50,10 @@
 		</div>
 	</header>
 
-	<main class="main-content+">
+	<main class="main-content">
 		<h1 class="visually-hidden">Webpage template</h1>
-		<section class="header__slider slider">			
+		<section class="header__slider slider">
+			<h2 class="visually-hidden">Sliding images</h2>
 			<ul class="slider__list">
 				<li class="slider__item slider__item--1">
 					<p class="slider__slogan">						
@@ -80,18 +81,18 @@
 		</section>
 
 		<section class="features">
-			<div class="features__container container">
+			<div class="features__container">
 				<h2 class="visually-hidden">Features:</h2>
 				<ul class="features__list">
-					<li class="features__item features__item--browser">
+					<li class="features__item features__item--browser" tabindex="0">
 						<h3 class="features__title">Research</h3>
 						<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</li>
-					<li class="features__item features__item--computer">
+					<li class="features__item features__item--computer" tabindex="0">
 						<h3 class="features__title">Fully customizable</h3>
 						<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</li>
-					<li class="features__item features__item--gears">
+					<li class="features__item features__item--gears" tabindex="0">
 						<h3 class="features__title">Work and work</h3>
 						<p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</li>
@@ -100,7 +101,7 @@
 		</section>
 
 		<section class="portfolio">
-			<div class="portfolio__container container">
+			<div class="portfolio__container">
 				<h2 class="portfolio__title">Featured works</h2>
 				<p class="portfolio__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a aliquet orci. Ut interdum mauris sem, non aliquet felis interdum sit amet.</p>
 			</div>
@@ -109,33 +110,33 @@
 			</div>
 		</section>
 		<section class="staff">
-			<div class="staff__container container">
-				<h2 class="visually-hidden">Our staff</h2>			
+			<div class="staff__container">
+				<h2 class="visually-hidden">Our staff:</h2>			
 				<ul class="staff__list">
 					<li class="staff__item">
-						<div class="staff__photo">
-							<img src="img/photo-1.jpg" width="52" height="52" alt="Photo of Dexter Gilbert">
+						<div class="staff__photo" tabindex="0">
+							<img class="staff__image" src="img/photo-1.jpg" width="52" height="52" alt="Photo of Dexter Gilbert">
 							<span class="staff__position">CEO</span>
 						</div>
 						<span class="staff__name">Dexter Gilbert</span>
 					</li>
 					<li class="staff__item">
-						<div class="staff__photo">
-							<img src="img/photo-2.jpg" width="52" height="52" alt="Photo of Mary Collier">
+						<div class="staff__photo" tabindex="0">
+							<img class="staff__image" src="img/photo-2.jpg" width="52" height="52" alt="Photo of Mary Collier">
 							<span class="staff__position">Manager</span>
 						</div>
 						<span class="staff__name">Mary Collier</span>
 					</li>
 					<li class="staff__item">
-						<div class="staff__photo">
-							<img src="img/photo-3.jpg" width="52" height="52" alt="Photo of Stefan Morrison">
+						<div class="staff__photo" tabindex="0">
+							<img class="staff__image" src="img/photo-3.jpg" width="52" height="52" alt="Photo of Stefan Morrison">
 							<span class="staff__position">Secretary</span>
 						</div>
 						<span class="staff__name">Stefan Morrison</span>
 					</li>
 					<li class="staff__item">
-						<div class="staff__photo">
-							<img src="img/photo-4.jpg" width="52" height="52" alt="Photo of Bill Smith">
+						<div class="staff__photo" tabindex="0">
+							<img class="staff__image" src="img/photo-4.jpg" width="52" height="52" alt="Photo of Bill Smith">
 							<span class="staff__position">Janitor</span>
 						</div>
 						<span class="staff__name">Bill Smith</span>
@@ -144,7 +145,7 @@
 			</div>
 		</section>
 		<section class="article">
-			<div class="article__container container">
+			<div class="article__container">
 				<h2 class="article__title">Your awesome title</h2>
 				<div class="article__wrapper">				
 					<p class="article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -153,42 +154,43 @@
 			</div>
 		</section>
 		<section class="stats">
-			<div class="stats__container container">
-				<table class="stats__table">
-					<tr>
-						<th class="stats__table-header">Followers</th>
-						<th class="stats__table-header">Since</th>
-						<th class="stats__table-header">Happy clients</th>
-						<th class="stats__table-header">Projects</th>
-					</tr>
-					<tr>
-						<td class="stats__table-data">455</td>
-						<td class="stats__table-data">1991</td>
-						<td class="stats__table-data">806</td>
-						<td class="stats__table-data">923</td>
-					</tr>
+			<h2 class="visually-hidden">Some statistics:</h2>
+			<div class="stats__container">
+				<table class="stats__table">					
+						<tr class="stats__table-data">
+							<td>455</td>
+							<td>1991</td>
+							<td>806</td>
+							<td>923</td>
+						</tr>										
+						<tr class="stats__table-header">
+							<th>Followers</th>
+							<th>Since</th>
+							<th>Happy clients</th>
+							<th>Projects</th>
+						</tr>					
 				</table>
 			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
-		<section class="footer__container container">
+		<section class="footer__container">
 			<div class="about">
 				<h2 class="about__title">About us</h2>
 				<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 			</div>
 			<div class="contact">
 				<h2 class="contact__title">Get in touch</h2>
-				<dl>
-					<dt>Address:</dt>
-					<dd>66 South Street,<br />
-							Window 6 Wonderland,</dd>
-					<dt>Phone:</dt>
-					<dd>+440 875369208 - Office<br />
-							+440 353363114 - Fax</dd>
-					<dt>Email:</dt>
-					<dd>freepik@sitename.com</dd>
+				<dl class="contact__list">
+					<dt class="contact__header">Address:</dt>
+					<dd class="contact__data">66 South Street,<br />
+																		Window 6 Wonderland,</dd>
+					<dt class="contact__header">Phone:</dt>
+					<dd class="contact__data">+440 875369208 - Office<br />
+																		+440 353363114 - Fax</dd>
+					<dt class="contact__header">Email:</dt>
+					<dd class="contact__data">freepik@sitename.com</dd>
 				</dl>
 			</div>
 			<div class="social">

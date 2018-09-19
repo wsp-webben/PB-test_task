@@ -1,18 +1,30 @@
 .article {
+	position: relative;
 	color: #fff;
-	background-color: rgba($dark-gray, 0.3);
+	background-image: url("../img/bg.png");
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba($dark-gray, 0.7);
+	}
 }
 
 .article__container {
+	@include container;
+	
 	position: relative;
 	padding-top: 120px;
-	padding-left: 320px;
+	padding-left: 380px;
 	padding-bottom: 60px;
 
 	&::before {
 		content: "";
 		position: absolute;
-		left: 100px;
+		left: 50px;
 		bottom: 0;
 		width: 300px;
 		height: 280px;
@@ -45,5 +57,6 @@
 
 .article__text-italic {
 	margin: 0;
+	font-weight: medium;
 	font-style: italic;
 }

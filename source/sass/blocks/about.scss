@@ -1,0 +1,22 @@
+.about {
+	max-width: 30%;
+}
+
+.about__title {
+	@include heading-line;
+
+	margin: 0;	
+	margin-bottom: 15px;
+
+	font-size: 21px;
+	line-height: 31px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.about__text {
+	margin: 0;
+	
+	font-size: 14px;
+	line-height: 17px;
+}

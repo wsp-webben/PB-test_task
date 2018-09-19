@@ -1,3 +1,9 @@
-.heading-line {
+@mixin container {
+	max-width: $desktop-width;
+	margin: 0 auto;
+	padding: 0 20px;
+}
 
+@mixin heading-line {
+	
 }
