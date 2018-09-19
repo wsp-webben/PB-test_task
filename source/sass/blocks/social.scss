@@ -16,7 +16,52 @@
 
 .social__text {
 	margin: 0;
+	margin-bottom: 20px;
 	
 	font-size: 14px;
 	line-height: 17px;
+}
+
+.social__list {
+	display: flex;
+}
+
+.social__item {
+	a {
+		display: block;	
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+
+		background-color: $light-blue;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 70%;
+
+		&:hover,
+		&:focus {
+			background-color: $light-gray;
+			outline: none;
+		};
+	}
+	
+	&--youtube a {
+		background-image: url("../img/icon-youtube.svg");
+	}
+	&--googleplus a {
+		background-image: url("../img/icon-googleplus.svg");
+	}
+	&--facebook a {
+		background-size: 40%;
+		background-image: url("../img/icon-facebook.svg");
+	}
+	&--dribbbler a {
+		background-image: url("../img/icon-dribbbler.svg");
+	}
+	&--twitter a {
+		background-image: url("../img/icon-twitter.svg");
+	}
+	&--instagram a {
+		background-image: url("../img/icon-instagram.svg");
+	}
 }
