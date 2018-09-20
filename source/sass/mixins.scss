@@ -5,5 +5,16 @@
 }
 
 @mixin heading-line {
+	display: flex;
+	align-items: center;
+
+	&::after {
+		content: "";		
+		display: block;
+		margin-left: 10px;
+		width: 80px;
+		height: 2px;
+		background-color: #fff;
+	};
 	
 }

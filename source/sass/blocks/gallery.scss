@@ -1,4 +1,28 @@
-.gallery {
-	min-height: 192px * 2;
-	background-color: rgba(256, 64, 64, 0.7);
+.gallery__list {	
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);	
+}
+
+.gallery__item {
+	height: 256px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	&--big {
+		grid-column-end: span 2;
+	}
+
+	&--city {
+		background-image: url("../img/gallery-city.jpg")
+	}
+	&--girl {
+		background-image: url("../img/gallery-girl.jpg")
+	}
+	&--laptop {
+		background-image: url("../img/gallery-laptop.jpg")
+	}
+	&--subway {
+		background-image: url("../img/gallery-subway.jpg")
+	}
 }

@@ -1,5 +1,5 @@
 .contact {
-	max-width: 35%;
+	max-width: 30%;
 }
 
 .contact__title {
@@ -44,5 +44,6 @@
 	&:hover, 
 	&:focus {
 		color: $light-blue;
+		outline: none;
 	};
 }

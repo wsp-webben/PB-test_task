@@ -53,8 +53,8 @@
 	<main class="main-content">
 		<h1 class="visually-hidden">Webpage template</h1>
 		<section class="header__slider slider">
-			<h2 class="visually-hidden">Sliding images</h2>
-			<ul class="slider__list">
+			<h2 class="visually-hidden">Sliding images</h2>		
+			<ul class="slider__list js-slider__list">
 				<li class="slider__item slider__item--1">
 					<p class="slider__slogan">						
 						<b class="slider__slogan-bold">Your Company <br />
@@ -74,10 +74,8 @@
 						<b class="slider__slogan-bold">Your Slogan</b>
 					</p>	
 				</li>
-			</ul>
-			<div class="slider__dots-wrapper"> 
-				<!-- Generated with JS -->
-			</div>
+			</ul>				
+			<!-- <ul class="slider__dots"></ul> -->			
 		</section>
 
 		<section class="features">
@@ -106,7 +104,16 @@
 				<p class="portfolio__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a aliquet orci. Ut interdum mauris sem, non aliquet felis interdum sit amet.</p>
 			</div>
 			<div class="portfolio__gallery gallery">
-				<!-- CSS Grid? -->
+				<ul class="gallery__list">
+					<li class="gallery__item gallery__item--city gallery__item--big"></li>
+					<li class="gallery__item gallery__item--girl"></li>
+					<li class="gallery__item gallery__item--city"></li>
+					<li class="gallery__item gallery__item--laptop"></li>										
+					<li class="gallery__item gallery__item--subway"></li>
+					<li class="gallery__item gallery__item--laptop"></li>
+					<li class="gallery__item gallery__item--subway"></li>
+					<li class="gallery__item gallery__item--girl gallery__item--big"></li>
+				</ul>
 			</div>
 		</section>
 		<section class="staff">
@@ -217,6 +224,6 @@
 		<div class="copyright container">			
 			<img class="copyright__caption" src="img/copyright.svg" width="88" height="12" alt="Copyright 2016">
 		</div>
-	</footer>	
+	</footer>
 </body>
 </html>
