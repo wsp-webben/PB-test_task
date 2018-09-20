@@ -1,5 +1,5 @@
 .about {
-	max-width: 30%;
+	max-width: 25%;
 }
 
 .about__title {
@@ -19,4 +19,11 @@
 	
 	font-size: 14px;
 	line-height: 17px;
+}
+
+@media (max-width: $mobile-width) {
+	.about {
+		max-width: none;
+		margin-bottom: 10px;
+	}
 }

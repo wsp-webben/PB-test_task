@@ -18,19 +18,20 @@
 	
 	position: relative;
 	padding-top: 120px;
-	padding-left: 380px;
+	padding-left: 350px;
 	padding-bottom: 60px;
 
 	&::before {
 		content: "";
 		position: absolute;
-		left: 50px;
+		left: 30px;
 		bottom: 0;
 		width: 300px;
-		height: 280px;
+		height: 250px;
 
 		background-image: url("../img/tablet-image.png");		
 		background-repeat: no-repeat;
+		background-size: cover;
 	};
 }
 
@@ -59,4 +60,29 @@
 	margin: 0;
 	font-weight: medium;
 	font-style: italic;
+}
+
+@media (max-width: $smaller-size) {
+	
+	.article__container{
+		padding-top: 50px;
+		padding-left: 300px;
+		
+		&::before {
+			width: 250px;
+			height: 230px;
+		}
+	}
+}
+
+@media (max-width: $smaller-size) {
+	
+	.article__container{
+		padding-top: 50px;
+		padding-left: 20px;
+		
+		&::before {			
+			content: none;
+		}
+	}
 }

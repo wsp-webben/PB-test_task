@@ -4,7 +4,8 @@
 }
 
 .gallery__item {
-	height: 256px;
+	position: relative;
+	height: 256px;	
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -24,5 +25,77 @@
 	}
 	&--subway {
 		background-image: url("../img/gallery-subway.jpg")
+	}
+
+	&:hover,
+	&:focus {
+		outline: none;
+
+		&::before {
+			opacity: 1;
+		}				
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba($dark-gray, 0.5);
+
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+}
+
+.gallery__links-wrapper {
+	display: flex;	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+	padding: 10px;
+
+	/*background-color: #f00;*/
+	
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.gallery__link {
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin: 5px;
+	border-radius: 5px;
+
+	background-color: #fff;
+	background-repeat: no-repeat;	
+	background-position: center;
+	background-size: 70%;
+
+	&--chain {
+		background-image: url("../img/chain.svg");		
+	}
+
+	&--lens {
+		background-image: url("../img/lens.svg");		
+	}
+}
+
+.gallery__item:hover,
+.gallery__item:focus {
+	.gallery__links-wrapper {
+		opacity: 1;
+	}
+}
+
+@media(max-width: $smaller-size) {
+	.gallery__item {
+		height: 200px;
 	}
 }

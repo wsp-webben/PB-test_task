@@ -27,3 +27,10 @@
 	text-align: center;
 	color: $dark-gray;
 }
+
+@media (max-width: $mobile-width) {
+	.stats__table__header th,
+	.stats__table__data td {
+		/* no time :( */
+	}
+}

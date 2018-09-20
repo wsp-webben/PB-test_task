@@ -11,3 +11,9 @@
 
 	justify-content: space-between;
 }
+
+@media (max-width: $mobile-width) {
+	.footer__container {
+		display: block;
+	}
+}

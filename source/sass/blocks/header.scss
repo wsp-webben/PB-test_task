@@ -12,8 +12,17 @@
 
 .header__image {
 	vertical-align: middle;
+	width: 208px;
+	height: 36px;
 }
 
 .header__nav {
 	margin-left: auto;
+}
+
+@media (max-width: $smaller-size) {
+	.header__image {
+		width: 150px;
+		height: 25px;
+	}
 }

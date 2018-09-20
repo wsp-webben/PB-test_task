@@ -39,3 +39,12 @@
 		font-weight: bold;
 	}
 }
+
+@media (max-width: $smaller-size) {
+	.slider__slogan {
+		padding-right: 120px;
+
+		font-size: 28px;
+		line-height: 30px;
+	}
+}

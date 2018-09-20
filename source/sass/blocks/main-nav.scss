@@ -28,3 +28,19 @@
 		};
 	}
 }
+
+@media (max-width: $smaller-size) {
+	.main-nav__item a {
+		padding: 25px 10px;
+
+		font-size: 16px;		
+	}
+}
+
+@media (max-width: $mini-size) {
+	.main-nav__item a {
+		padding: 25px 10px;
+
+		font-size: 14px;		
+	}
+}

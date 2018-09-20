@@ -47,3 +47,14 @@
 		outline: none;
 	};
 }
+
+@media (max-width: $mobile-width) {
+	.contact {
+		max-width: none;
+		margin-bottom: 10px;
+	}
+
+	.contact__item {
+		justify-content: flex-start;
+	}
+}
