@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "Template for test task",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "npm-check-updates": "^2.14.2"
+  },
   "devDependencies": {
     "autoprefixer": "^8.6.5",
-    "browser-sync": "^2.24.5",
+    "browser-sync": "^2.24.7",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-csso": "^3.0.1",
